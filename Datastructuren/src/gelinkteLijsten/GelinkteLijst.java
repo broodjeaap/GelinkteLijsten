@@ -2,36 +2,44 @@ package gelinkteLijsten;
 
 public abstract class GelinkteLijst {
 	private Node first, last;
+	private int size;
 	
 	public GelinkteLijst(){
 		
 	}
 	
-	public Node getFirst(){
+	Node getFirst(){
 		return first;
 	}
 	
-	public Node getLast(){
+	Node getLast(){
 		return last;
 	}	
 	
-	public void insertFirst(){}
+	void insertFirst(){}
 
-	public void insertLast(){}
+	void insertLast(){}
 	
-	public void insertBefore(){}
+	void insertBefore(){}
 	
-	public void insertAfter(){}
+	void insertAfter(){}
 
-	public void remove(Object data){}
+	void remove(Object data){}
 	
 	
-	public boolean isFirst(Node current){
+	boolean isFirst(Node current){
 		return false; //dummy
 	}
 	
-	public boolean isLast(Node current){
+	boolean isLast(Node current){
 		return false; //dummy	
 	}
 	
+	int getSize(){
+		return size;
+	}
+	
+	protected int setSize(){
+		return size;
+	}
 }
